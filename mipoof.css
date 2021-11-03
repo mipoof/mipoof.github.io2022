@@ -17,3 +17,9 @@ img {
 #img-master {
     border: 3px dashed yellow;
 }
+
+.relative {
+    background: red;
+    height: 1000px;
+    width: 1000px;
+}
