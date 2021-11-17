@@ -1,32 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
+.flip-card-inner {
+    position: relative;
+    /*絕對位置*/
 }
 
-img {
-    height: 100px;
-    width: 100px;
+.flip-cart-front,
+.flip-cart-back {
+    position: absolute;
+    /*相對位置*/
 }
 
-.img-start {
-    border: 2px solid red;
+.flip-cart-front,
+.flip-cart-back,
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
 }
 
-#img-master {
-    border: 3px dashed yellow;
+.flip-card {
+    width: 300px;
+    height: 300px;
 }
 
-.relative {
-    margin-left: 20px;
-    background: red;
-    height: 500px;
-    width: 500px;
+.flip-cart-front {
+    background: lightpink;
+    color: black;
 }
 
-.absolute {
-    background: black;
-    height: 100px;
-    width: 100px;
+.flip-cart-back {
+    background: beige;
+    transform: rotateY(180deg);
+    color: black;
+}
+
+.flip-card-inner:hover {
+    transform: rotateY(180deg);
 }
